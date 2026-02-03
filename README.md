@@ -72,7 +72,6 @@ cd my-gmat-vocab
 
 ### Popup tra từ
 - Hiện giữa màn hình
-- Loading: "Dạ đang tra từ đợi xíu Chị My nha..."
 - Hiển thị đầy đủ nghĩa từ TracAu.vn
 - Dropdown chọn danh sách để lưu
 
@@ -142,9 +141,6 @@ Mọi đóng góp đều được chào đón! Tạo issue hoặc pull request n
 
 MIT License - Tự do sử dụng cho mục đích cá nhân và phi lợi nhuận.
 
-## 💝 Dành tặng
-
-Được tạo ra với ❤️ để giúp Chị My và các bạn học GMAT chinh phục từ vựng!
 
 ---
 
