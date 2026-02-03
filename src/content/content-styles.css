@@ -1,0 +1,209 @@
+/* My GMAT Vocab - Popup Styles (TracAu.vn iframe) */
+
+/* Overlay */
+.mgv-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  font-family: Arial, sans-serif;
+}
+
+/* Popup Container */
+.mgv-popup {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 800px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Popup Header - Simple */
+.mgv-popup-header {
+  background: linear-gradient(135deg, #0E3150 0%, #1a4a6d 100%);
+  color: #F7E9E3;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.mgv-word-display {
+  font-size: 20px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.mgv-close-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #F7E9E3;
+  font-size: 32px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.2s;
+}
+
+.mgv-close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Iframe Container */
+.mgv-iframe-container {
+  flex: 1;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  padding-top: 0;
+}
+
+.mgv-tracau-iframe {
+  width: 100%;
+  height: calc(100% + 90px);
+  /* Extra height to hide logo and slogan */
+  border: none;
+  background: white;
+  position: relative;
+  top: -90px;
+  /* Move up to hide "TRA CÂU VIỆT - ANH" logo */
+}
+
+/* Footer */
+.mgv-popup-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mgv-save-section {
+  position: relative;
+}
+
+/* Save Button */
+.mgv-btn-primary {
+  background: linear-gradient(135deg, #f9fafb, #f9fafb 100%);
+  color: #0E3150;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.mgv-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.mgv-dropdown-arrow {
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+/* Dropdown */
+.mgv-dropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.mgv-dropdown-content {
+  padding: 8px 0;
+}
+
+.mgv-list-option {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+  color: #374151;
+}
+
+.mgv-list-option:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+}
+
+.mgv-no-lists {
+  padding: 20px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0;
+}
+
+.mgv-dropdown-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 8px;
+}
+
+.mgv-btn-secondary {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.mgv-btn-secondary:hover {
+  background: #eff6ff;
+}
+
+/* Custom Scrollbar */
+.mgv-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mgv-dropdown::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.mgv-dropdown::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.mgv-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

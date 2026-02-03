@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "My GMAT Vocab",
+  "version": "1.0.0",
+  "description": "Tra từ nhanh và quản lý từ vựng GMAT với TracAu.vn",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.tracau.vn/*"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/content/content-script.js"
+      ],
+      "css": [
+        "src/content/content-styles.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/icons/icon16(1).png",
+      "48": "assets/icons/icon48(2).png",
+      "128": "assets/icons/icon128(2).png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16(1).png",
+    "48": "assets/icons/icon48(2).png",
+    "128": "assets/icons/icon128(2).png"
+  }
+}
